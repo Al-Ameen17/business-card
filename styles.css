@@ -1,0 +1,57 @@
+body {
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*{box-sizing:border-box}
+
+.container-image {
+    position: relative;
+    width: 50%;
+    max-width: 150px;
+}
+
+.avatar{
+    width: 100%;
+    height:auto; 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #e5e5e5;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 16px;
+    padding: 14px;
+    text-align: center;
+}
+
+.container-image:hover .overlay {
+    opacity: 1;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #14213d;
+    color: #e5e5e5;
+    border-bottom: 6px solid #fca311;
+    border-right:6px solid #fca311;
+    box-shadow: 8px 8px 5px lightgray;
+    text-shadow:#e5e5e5
+}
+
+
+.border-blue {
+    border-left: 6px solid #fca311;
+    border-bottom: 6px solid #fca311;
+}
